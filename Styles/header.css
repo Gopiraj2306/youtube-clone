@@ -1,0 +1,153 @@
+.Header{
+ height: 65px;
+ display: flex;
+ justify-content: space-between;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background-color: white;
+ border-bottom: 1px solid #8d99ae;
+ z-index: 100;
+ 
+}
+.Left-section{
+   display: flex;
+     align-items: center;
+
+}
+.hamburger-icon{
+    height: 22px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.yt-icon{
+    height: 20px;
+}
+
+.middle-section{
+   
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 50px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    flex: 1;
+    border: 1px solid rgb(192, 192, 192);
+    outline: none;
+    height: 34px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 4px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width: 0;
+}
+.search-bar::placeholder{
+    font-size: 16px;
+   
+    font-family: gp;
+}
+.search-button{
+    height: 36px;
+    width: 66px;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: rgb(245,245,245);
+    margin-left: -2px;
+    border-radius: 4px;
+    margin-right: 10px;
+   
+    cursor: pointer;
+}
+.search-button, .voice-button, .upload-icon-container, .yt-app-icon-container,
+.notification-icon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .tooltip,  
+.voice-button .tooltip,
+.upload-icon-container .tooltip,
+.yt-app-icon-container .tooltip,
+.notification-icon-container .tooltip{
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    font-size: 13px;
+    position: absolute;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.50s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family:  Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.yt-app-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip{
+    opacity: 1;
+}
+.search-icon{
+    width: 25px;
+    
+}
+.voice-button{
+    height: 32px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245,245,245);
+} 
+
+.voice-icon{
+    height: 24px;
+   
+}
+.right-section{
+   
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+   
+}
+.upload-icon{
+    height: 24px;
+}
+.yt-app-icon{
+    height: 24px;
+}
+.notification-icon{
+    height: 24px;
+}
+.notification-icon-container{
+    position: relative;
+}
+.notification-icon-container-count{
+    position: absolute;
+    background-color: rgb(211, 7, 7);
+    color: white;
+    top: -3px;
+    right: -4px;
+
+    font-size: 11px;
+    font-family:  Roboto,  'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1px 4px;
+    border-radius: 14px;
+}
+.brad-img{
+    height: 30px;
+    border-radius: 15px;
+}
+
+
+
+
